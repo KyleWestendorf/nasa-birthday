@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="What did NASA see on your birthday? - Space photos through time from NASA's Astronomy Photo of the Day"
+    />
+    <meta name="theme-color" content="#7edbed" />
+    <title>NASA Birthday</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Josefin+Sans:wght@100;200;400;700&display=swap");
+    </style>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/theme.css" rel="stylesheet" />
+    <!-- <link href="/css/style.css" rel="stylesheet" /> -->
+    <link
+      rel="stylesheet"
+      href="/css/nasa-birthday.css"
+      rel="manifest"
+      href="/manifest.json"
+      rel="apple-touch-icon"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+  </head>
+  <body>
+    <div class="birthday-container">
+      <article>
+        <header>
+          <div class="container">
+            <div class="container-inner">
+              <!-- <a href="https://paulabewick.com/" class="link gradient-underline-link"
+                >paulabewick.com</a
+              > -->
+              <div class="share-links">
+              <div class="link-container">
+                <a
+                  href="https://codepen.io/PaulaBewick/"
+                  target="_blank"
+                  class="share-link"
+                  title="CodePen"
+                  ><img
+                    class="icon"
+                    src="/assets/icons/codepen-line.svg"
+                    alt="CodePen logo link"
+                    width="50"
+                    height="50"
+                /></a>
+              </div>
+              
+              </div>
+              <div class="theme-toggle-button-container">
+                <label class="toggle-button-label" for="switch">
+                  <input
+                    type="checkbox"
+                    aria-label="theme toggle"
+                    class="toggle-button"
+                    id="switch"
+                    name="theme"
+                  />
+                  <span class="toggle-rounded">
+                    <span class="material-icons"> brightness_5 </span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="content">
+            <div class="birthday-results">
+              <div class="img-info">
+                <h2 id="title">Astronomy Photo of the Day</h2>
+                <p id="date"></p>
+                <p id="description">What did NASA see on your birthday?</p>
+                <p id="copyright">Image Credit: NASA</p>
+                <div id="birthday-form">
+                  <div class="dropdown" id="monthDropdown">
+                    <button
+                      class="dropdown-toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="dropdown_menu"
+                    >
+                      MONTH
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      role="listbox"
+                      aria-expanded="false"
+                      aria-labelledby="dropdown-menu"
+                    >
+                      <li role="option" tabindex="0">January</li>
+                      <li role="option" tabindex="0">February</li>
+                      <li role="option" tabindex="0">March</li>
+                      <li role="option" tabindex="0">April</li>
+                      <li role="option" tabindex="0">May</li>
+                      <li role="option" tabindex="0">June</li>
+                      <li role="option" tabindex="0">July</li>
+                      <li role="option" tabindex="0">August</li>
+                      <li role="option" tabindex="0">September</li>
+                      <li role="option" tabindex="0">October</li>
+                      <li role="option" tabindex="0">November</li>
+                      <li role="option" tabindex="0">December</li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown" id="dayDropdown">
+                    <button
+                      class="dropdown-toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="dropdown_menu"
+                    >
+                      DAY
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      role="listbox"
+                      aria-expanded="false"
+                      aria-labelledby="dropdown-menu"
+                    >
+                      <li role="option" tabindex="0">1</li>
+                      <li role="option" tabindex="0">2</li>
+                      <li role="option" tabindex="0">3</li>
+                      <li role="option" tabindex="0">4</li>
+                      <li role="option" tabindex="0">5</li>
+                      <li role="option" tabindex="0">6</li>
+                      <li role="option" tabindex="0">7</li>
+                      <li role="option" tabindex="0">8</li>
+                      <li role="option" tabindex="0">9</li>
+                      <li role="option" tabindex="0">10</li>
+                      <li role="option" tabindex="0">11</li>
+                      <li role="option" tabindex="0">12</li>
+                      <li role="option" tabindex="0">13</li>
+                      <li role="option" tabindex="0">14</li>
+                      <li role="option" tabindex="0">15</li>
+                      <li role="option" tabindex="0">16</li>
+                      <li role="option" tabindex="0">17</li>
+                      <li role="option" tabindex="0">18</li>
+                      <li role="option" tabindex="0">19</li>
+                      <li role="option" tabindex="0">20</li>
+                      <li role="option" tabindex="0">21</li>
+                      <li role="option" tabindex="0">22</li>
+                      <li role="option" tabindex="0">23</li>
+                      <li role="option" tabindex="0">24</li>
+                      <li role="option" tabindex="0">25</li>
+                      <li role="option" tabindex="0">26</li>
+                      <li role="option" tabindex="0">27</li>
+                      <li role="option" tabindex="0">28</li>
+                      <li role="option" tabindex="0">29</li>
+                      <li role="option" tabindex="0" id="day30">30</li>
+                      <li role="option" tabindex="0" id="day31">31</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="media-result"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-centered">
+          <p>Created with Nasa's Astronomy Picture of the Day API</p>
+        </div>
+      </article>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <div class="link-container">
+            <a
+              href="https://www.linkedin.com/in/paulagbewick/"
+              target="_blank"
+              class="social-link"
+              title="LinkedIn"
+              ><img
+                class="icon"
+                src="/assets/icons/linkedin-line.svg"
+                alt="LinkedIn logo link"
+                width="50"
+                height="50"
+            /></a>
+          </div>
+
+          <div class="link-container">
+            <a
+              href="https://github.com/PaulaBewick"
+              target="_blank"
+              class="social-link"
+              title="GitHub"
+              ><img
+                class="icon"
+                src="/assets/icons/github-line.svg"
+                alt="GitHub logo link"
+                width="50"
+                height="50"
+            /></a>
+          </div>
+
+          <div class="link-container">
+            <a
+              href="https://codepen.io/PaulaBewick/"
+              target="_blank"
+              class="social-link"
+              title="CodePen"
+              ><img
+                class="icon"
+                src="/assets/icons/codepen-line.svg"
+                alt="CodePen logo link"
+                width="50"
+                height="50"
+            /></a>
+          </div>
+        </div>
+        <p class="footer-copyright">© Paula Bewick 2023</p>
+      </div>
+    </footer>
+    <script src="/js/handlers.js"></script>
+    <script src="/js/theme.js"></script>
+    <!-- <script src="/js/animations.js"></script> -->
+    <script src="/js/nasa-birthday.js"></script>
+  </body>
+</html>
