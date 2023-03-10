@@ -1,3 +1,5 @@
+import { populateDays } from "./utilities";
+
 var day30 = document.getElementById("day30");
 var day31 = document.getElementById("day31");
 
@@ -36,25 +38,6 @@ const daysInMonths = {
   November: 30,
   December: 31,
 };
-
-function populateDays(month) {
-  if (month == "February") {
-    day30.classList.add("hidden");
-    day31.classList.add("hidden");
-    // day30.hidden = true;
-    // day31.hidden = true;
-  } else if (daysInMonths[month] == 30) {
-    day30.classList.remove("hidden");
-    day31.classList.add("hidden");
-    // day30.hidden = false;
-    // day31.hidden = true;
-  } else {
-    day30.classList.remove("hidden");
-    day31.classList.remove("hidden");
-    // day30.hidden = false;
-    // day31.hidden = false;
-  }
-}
 
 let currentBirthday = "";
 
@@ -100,7 +83,7 @@ function checkBirthday() {
 monthDropdown.addEventListener("change", (e) => {
   dayDropdown.children[0].innerText = "DAY";
   month = e.target.innerText;
-  populateDays(month);
+  populateDays(month, day30, day31, daysInMonths);
   checkBirthday();
 });
 
